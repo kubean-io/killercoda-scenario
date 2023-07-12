@@ -1,0 +1,38 @@
+{
+  "title": "Kubean Intro",
+  "description": "Learn to work with Kubean to manage your cluster lifecycle",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Create a kind cluster",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Install Kubean",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Apply Kubean CR",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh",
+        "background": "step3/background.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        { "file": "kubean-cr.yml", "target": "/root", "chmod": "+w" }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu-4GB"
+  }
+}
