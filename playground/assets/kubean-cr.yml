@@ -66,8 +66,7 @@ metadata:
   name: cluster-mini-install-ops
 spec:
   cluster: cluster-mini
-  image: ghcr.io/kubean-io/spray-job:v0.7.1
-  backoffLimit: 0
+  image: ghcr.io/kubean-io/spray-job:v0.8.1
   actionType: playbook
   action: cluster.yml
   preHook:
