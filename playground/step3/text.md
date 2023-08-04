@@ -8,9 +8,9 @@ Install the customised Kubean CR YAML, it will create a [Job](https://kubernetes
 kubectl apply -f ./kubean-cr.yml
 ```{{exec}}
 
-Let's watch the job logs that wat just launched:
+Let's watch the logs of job that just launched:
 
-> The process takes a while, probably 10 minutes, you could grab some coffee~
+> The process takes a while, probably 15 minutes, you could grab some coffee~
 
 ```plain
 sleep 5 && kubectl -n kubean-system logs -f $(kubectl -n kubean-system get pods | awk '$1~"kubean-cluster-mini-install-ops-job*" {print $1}')
